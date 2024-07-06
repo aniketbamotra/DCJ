@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mulish-200 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.mulish-300 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.mulish-400 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.mulish-500 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.mulish-600 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.mulish-700 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.mulish-800 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+.mulish-900 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+.mulish-1000 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+}
+.brawler-400 {
+    font-family: "Brawler", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  .brawler-700 {
+    font-family: "Brawler", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    font-weight: 0;
+}
+
+
+/* 1. Buttons */
+
+.button{
+    padding: .75rem 1.25rem;
+    border: 2px solid black;
+    background: transparent;
+    cursor: pointer;
+    max-width: fit-content;
+    text-decoration: none;
+    
+}
+.primary-btn{
+    background-color: #000;
+    color: white;
+}
+.secondary-btn{
+    background-color: white;
+    color: #000;
+}
+
+
+
+/* 2. Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid;
+}
+.logo-container{
+    padding: 8px;
+    border-right: 2px solid;
+    max-width: fit-content;
+}
+nav{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-right: 3.5rem;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* 3. Banner */
+
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #d6c537;
+    color: #000;
+    gap: 4rem;
+    border-bottom: 2px solid black;
+}
+.banner-text {
+    max-width: 30%;
+}
+.banner-text h1 {
+    margin: 0;
+    font-size: 3em;
+}
+.banner-text p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+.banner-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.banner-image img {
+    width: 50vw;
+    object-fit: cover;
+}
+
+
+
+/* 4. COP 28 Section */
+
+.cop-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 6.5rem;
+    gap: 3rem;
+}
+/* .cop-section .images, .cop-section .content{
+    flex: 1;
+} */
+.cop-section img{
+    margin: 0rem 1.5rem 1.5rem 0rem;
+}
+.cop-section .content h1, .cop-section .content p, .cop-section .content ul{
+    max-width: 38rem;
+}
+.cop-section .content h1, .cop-section .content p{
+    margin-bottom: 1.5rem;
+}
+.cop-section .content ul{
+    margin-bottom: 3rem;
+}
+
+
+/* 5. Latest News */
+
+.latest-news {
+    padding: 0 20rem;
+    margin-bottom: 7rem;
+}
+
+.latest-news h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+}
+
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1rem;
+}
+
+.card {
+    border: 2px solid;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .date, .card h3{
+    text-align: left;
+}
+
+.card .date {
+    font-size: 0.875rem;
+    color: black;
+    padding: 1rem 1rem .75rem 1rem;
+    width: 100%;
+}
+
+.card h3 {
+    font-size: 1rem;
+    margin: 0rem 1rem 2.5rem 1rem;
+}
+
+
+/* 6. Video Section */
+
+.video-section{
+    background: #DCDCC4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-title{
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+}
+.video{
+    margin-bottom: 3rem;
+}
+.video-subtext{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+
+/* 7. Podcast */
+
+.latest-podcasts {
+    margin: 7rem 0;
+    padding: 0 11.125rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.view-more {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ff4500;
+    background: none;
+    color: #ff4500;
+    cursor: pointer;
+}
+
+.podcast-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.podcast-card {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.icon {
+    margin-right: 3rem;
+    padding: 3rem;
+    border-right: 2px solid;
+}
+
+.icon img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content h3 {
+    font-size: 1.25rem;
+    margin-bottom: .75rem;
+}
+
+.date {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.audio-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.play-btn, .volume-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.duration {
+    margin: 0 1rem;
+    font-size: 0.875rem;
+}
+
+
+/* 8. Working Group */
+
+.working-group {
+    padding: 0 11.125rem;
+    margin-bottom: 16rem;
+
+}
+
+.working-group h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.working-group .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    background: #DFD54D;
+}
+
+.card img {
+    object-fit: cover;
+    margin-bottom: 0.75rem;
+}
+
+.working-group .card h3 {
+    margin: 0.75rem 0 0.75rem 0;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.working-group .card p {
+    margin: 0;
+    font-size: 0.875rem;
+    text-align: center;
+    margin-bottom: .75rem;
+}
+
+
+/* 9. Campaign Section */
+
+.campaign-section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 7rem;
+}
+
+.campaign-section .content h1, .campaign-section .content p, .campaign-section .content ul{
+    max-width: 38rem;
+}
+.campaign-section .content h1, .campaign-section .content p{
+    margin-bottom: 1.5rem;
+}
+.campaign-section .content ul{
+    margin-bottom: 3rem;
+}
+
+
+/* 10 Bottom banner */
+
+.bottom-banner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10rem;
+    background: #421F48;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+.bottom-banner h1{
+    font-size: 3.75rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.bottom-banner p{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2.5rem;
+}
+
+/* bottom banner 2 */
+
+.bottom-banner-2{
+    justify-content: center;
+}
+.bottom-banner-2 .banner-text{
+    max-width: none;
+}
+.bottom-banner-2 h1{
+    color: white;
+    font-size: 3.75rem;
+    max-width: 70%;
+}
+ .bottom-banner-2 p{
+    max-width: 50%;
+    color: #000;
+}
+.bottom-banner-2{
+    background-color: transparent;
+    padding: 0;
+}
+.bottom-banner-2 .banner-text{
+    background-color: #421F48;
+    padding-top: 5.5rem;
+    padding-bottom: 7.75rem;
+    padding-left: 6.5rem;
+    flex: 1;
+}
+ .bottom-banner-right{
+    background-color: transparent;
+    flex: 1;
+}
+
+
+/* 11. Footer */
+
+footer{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 7rem;
+}
+footer  img{
+    width: 5rem;
+    height: 5rem;
+}
+footer p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+footer ul{
+    list-style: none;
+}
+footer li{
+    font-weight: 400;
+    margin-bottom: .75rem;
+}
+footer input{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .75rem;
+    border: 2px solid black;
+}
+
+
+
+
+/* About Page */
+
+.about-section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 6.5rem;
+    gap: 3rem;
+}
+.about-section img{
+    margin: 0rem 1.5rem 1.5rem 0rem;
+}
+.about-section .content h1, .about-section .content p, .about-section .content ul{
+    max-width: 38rem;
+}
+.about-section .content h1, .about-section .content p{
+    margin-bottom: 1.5rem;
+}
+.about-section .content h1{
+    font-size: 3.5rem;
+}
+.about-section .content p{
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+}
+
+
+
+
+/* GCC */
+
+.gcc .banner, .ir .banner{
+    background: transparent;
+}
+.gcc .banner .banner-text, .ir .banner .banner-text{
+    padding-left: 5rem;
+    max-width: 40%;
+}
+.gcc .banner-text h1{
+    font-size: 2.5rem;
+}
+.gcc .banner-image img{
+    height: 50vh;
+}
+
+.gcc .working-group {
+    margin-top: 7rem;
+}
+
+.gcc .bottom-banner{
+    justify-content: center;
+}
+.gcc .bottom-banner .banner-text{
+    max-width: none;
+}
+.gcc .bottom-banner h1{
+    font-size: 3.75rem;
+    max-width: 70%;
+}
+.gcc .bottom-banner p{
+    max-width: 50%;
+    color: #000;
+}
+.gcc .bottom-banner{
+    background-color: transparent;
+    padding: 0;
+}
+.gcc .bottom-banner .banner-text{
+    background-color: #421F48;
+    padding-top: 5.5rem;
+    padding-bottom: 7.75rem;
+    padding-left: 6.5rem;
+    flex: 1;
+}
+.gcc .bottom-banner-right{
+    background-color: transparent;
+    flex: 1;
+}
+
+
+
+/* International Regions */
+
+
+.ir .banner .banner-text h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.ir .banner .banner-text ul{
+    font-size: 1.125rem;
+    margin-left: 1.5rem;
+}
+
+.ir .banner-image{
+    height: 50vh;
+    width: 100%;
+}
+.ir .banner-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ir-nr-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.ir-btn, .nr-btn{
+    padding: 1.25rem 2rem;
+    border-left: 2px solid black;
+    font-size: 1.25rem;
+}
+.nr-btn{
+    border-right: 2px solid black;
+}
+.region-active{
+    background-color: #EB6928;
+    color: white;
+}
+
+.region-list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #DCDCC4;
+}
+.region-list-container ul{
+    background-color: white;
+    padding: 3rem;
+    border: 2px solid;
+}
+.region-list-container li{
+    font-size: 1rem;
+}
+.region-list-container a{
+    text-decoration: none;
+    color: black;
+}
