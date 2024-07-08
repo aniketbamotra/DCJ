@@ -97,6 +97,15 @@ h1, h2, h3, h4, h5, h6, p{
     color: #000;
 }
 
+.region-active, .button-active {
+    background-color: #EB6928;
+    color: white;
+}
+
+.button-active{
+    border: none;
+}
+
 
 
 /* 2. Header */
@@ -111,6 +120,10 @@ header{
     padding: 8px;
     border-right: 2px solid;
     max-width: fit-content;
+}
+.logo-img{
+    width: 75px;
+    height: 75px;
 }
 nav{
     display: flex;
@@ -136,8 +149,11 @@ nav ul{
     gap: 4rem;
     border-bottom: 2px solid black;
 }
-.banner-text {
-    max-width: 30%;
+.banner-text, .banner-image {
+    flex: 1;
+}
+.banner-text h1, .banner-text p{
+    padding-left: 15rem;
 }
 .banner-text h1 {
     margin: 0;
@@ -150,10 +166,14 @@ nav ul{
 .banner-buttons {
     display: flex;
     gap: 10px;
+    padding-left: 15rem;
 }
-
+.banner-image{
+    height: 60vh;
+}
 .banner-image img {
-    width: 50vw;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -171,9 +191,17 @@ nav ul{
 /* .cop-section .images, .cop-section .content{
     flex: 1;
 } */
-.cop-section img{
-    margin: 0rem 1.5rem 1.5rem 0rem;
+.cop-img1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+.cop-section .image-row2{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
 .cop-section .content h1, .cop-section .content p, .cop-section .content ul{
     max-width: 38rem;
 }
@@ -188,7 +216,7 @@ nav ul{
 /* 5. Latest News */
 
 .latest-news {
-    padding: 0 20rem;
+    padding: 0 10rem;
     margin-bottom: 7rem;
 }
 
@@ -205,11 +233,13 @@ nav ul{
 }
 
 .card {
-    border: 2px solid;
+    border: 1px solid black;
 }
 
-.card img {
+.latest-news .card img {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
 .card .date, .card h3{
@@ -219,7 +249,7 @@ nav ul{
 .card .date {
     font-size: 0.875rem;
     color: black;
-    padding: 1rem 1rem .75rem 1rem;
+    padding: 1rem 1rem 0rem 1rem;
     width: 100%;
 }
 
@@ -232,7 +262,7 @@ nav ul{
 /* 6. Video Section */
 
 .video-section{
-    background: #DCDCC4;
+    background: #EEEEEE;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -255,7 +285,7 @@ nav ul{
 
 /* 7. Podcast */
 
-.latest-podcasts {
+.latest-podcasts, .dcj-members {
     margin: 7rem 0;
     padding: 0 11.125rem;
 }
@@ -273,20 +303,19 @@ nav ul{
 }
 
 .view-more {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.25rem;
     border: 1px solid #ff4500;
     background: none;
-    color: #ff4500;
     cursor: pointer;
 }
 
-.podcast-cards {
+.podcast-cards, .member-cards {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.podcast-card {
+.podcast-card, .member-card {
     display: flex;
     align-items: center;
     border: 2px solid black;
@@ -296,6 +325,7 @@ nav ul{
     margin-right: 3rem;
     padding: 3rem;
     border-right: 2px solid;
+    background-color: #DCDCC4;
 }
 
 .icon img {
@@ -365,7 +395,8 @@ nav ul{
     background: #DFD54D;
 }
 
-.card img {
+.working-group .card img {
+    width: 100%;
     object-fit: cover;
     margin-bottom: 0.75rem;
 }
@@ -384,6 +415,46 @@ nav ul{
 }
 
 
+/* DCJ members homepage */
+
+.member-card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.member-card h3{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+
+}
+.member-card h3 span{
+    color: #EB6928;
+}
+.member-card .member-content{
+    font-size: 1.125rem;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+}
+.member-card .icon{
+    padding: 4rem;
+}
+.member-card .icon img{
+    width: 5.5rem;
+    height: 5.5rem;
+}
+.member-card .forward-btn{
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+    margin-bottom: 1rem;
+    align-self: flex-end;
+    margin-right: 2rem;
+}
+
+
+
 /* 9. Campaign Section */
 
 .campaign-section{
@@ -393,6 +464,8 @@ nav ul{
     align-items: center;
     gap: 4rem;
     margin-bottom: 7rem;
+    background-color: #000;
+    padding: 6.25rem;
 }
 
 .campaign-section .content h1, .campaign-section .content p, .campaign-section .content ul{
@@ -401,9 +474,17 @@ nav ul{
 .campaign-section .content h1, .campaign-section .content p{
     margin-bottom: 1.5rem;
 }
+.campaign-section .content h1{
+    color: #DCDCC4;
+}
+.campaign-section .content p{
+    color: #fff;
+}
 .campaign-section .content ul{
     margin-bottom: 3rem;
+    color: #fff;
 }
+
 
 
 /* 10 Bottom banner */
@@ -614,10 +695,6 @@ footer input{
 }
 .nr-btn{
     border-right: 2px solid black;
-}
-.region-active{
-    background-color: #EB6928;
-    color: white;
 }
 
 .region-list-container{
