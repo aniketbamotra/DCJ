@@ -239,7 +239,7 @@ nav .main-menu{
     height: 100%;
     object-fit: cover;
 }
-.cop-section .image-row2{
+.cop-section .image-row2, .about-section .image-row2{
     display: flex;
     gap: 1.5rem;
     margin-top: 1.5rem;
@@ -631,9 +631,7 @@ footer input{
     margin: 7rem 6.5rem;
     gap: 3rem;
 }
-.about-section img{
-    margin: 0rem 1.5rem 1.5rem 0rem;
-}
+
 .about-section .content h1, .about-section .content p, .about-section .content ul{
     max-width: 38rem;
 }
@@ -663,8 +661,8 @@ footer input{
 .gcc .banner-text h1{
     font-size: 2.5rem;
 }
-.gcc .banner-image img{
-    height: 50vh;
+.gcc .banner-text h1, .gcc .banner-text p, .gcc .banner-buttons{
+    padding-left: 0;
 }
 
 .gcc .working-group {
@@ -760,4 +758,8 @@ footer input{
 .region-list-container a{
     text-decoration: none;
     color: black;
+}
+
+.ir .banner-buttons{
+    padding-left: 0;
 }
