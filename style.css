@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .button{
     padding: .75rem 1.25rem;
-    border: 2px solid black;
+    border: 1px solid black;
     background: transparent;
     cursor: pointer;
     max-width: fit-content;
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6, p{
     color: #000;
 }
 
-.region-active, .button-active {
+.region-active, .button-active{
     background-color: #EB6928;
     color: white;
 }
@@ -114,11 +114,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid;
+    border: 1px solid;
 }
 .logo-container{
     padding: 8px;
-    border-right: 2px solid;
+    border-right: 1px solid;
     max-width: fit-content;
 }
 .logo-img{
@@ -190,7 +190,7 @@ nav .main-menu{
     background-color: #d6c537;
     color: #000;
     gap: 4rem;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
 .banner-text, .banner-image {
     flex: 1;
@@ -361,13 +361,13 @@ nav .main-menu{
 .podcast-card, .member-card {
     display: flex;
     align-items: center;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .icon {
     margin-right: 3rem;
     padding: 3rem;
-    border-right: 2px solid;
+    border-right: 1px solid;
     background-color: #DCDCC4;
 }
 
@@ -538,8 +538,8 @@ nav .main-menu{
     align-items: center;
     gap: 10rem;
     background: #421F48;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 
 }
 .bottom-banner h1{
@@ -564,7 +564,7 @@ nav .main-menu{
 .bottom-banner-2 h1{
     color: white;
     font-size: 3.75rem;
-    max-width: 70%;
+    padding-left: 2rem;
 }
  .bottom-banner-2 p{
     max-width: 50%;
@@ -590,11 +590,12 @@ nav .main-menu{
 /* 11. Footer */
 
 footer{
+    border-top: 1px solid black;
     margin-top: 3rem;
     margin-bottom: 5rem;
     display: flex;
     justify-content: space-between;
-    padding: 0rem 7rem;
+    padding: 3rem 7rem 0rem 7rem;
 }
 footer  img{
     width: 5rem;
@@ -615,7 +616,7 @@ footer input{
     width: 100%;
     margin-bottom: 1rem;
     padding: .75rem;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 
@@ -728,15 +729,19 @@ footer input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
 .ir-btn, .nr-btn{
     padding: 1.25rem 2rem;
-    border-left: 2px solid black;
+    border-left: 1px solid black;
     font-size: 1.25rem;
 }
+.ir-btn a, .nr-btn a{
+    color: #000;
+    text-decoration: none;
+}
 .nr-btn{
-    border-right: 2px solid black;
+    border-right: 1px solid black;
 }
 
 .region-list-container{
@@ -746,11 +751,12 @@ footer input{
     padding-top: 6rem;
     padding-bottom: 6rem;
     background-color: #DCDCC4;
+    flex-wrap: wrap;
 }
 .region-list-container ul{
     background-color: white;
     padding: 3rem;
-    border: 2px solid;
+    border: 1px solid;
 }
 .region-list-container li{
     font-size: 1rem;
@@ -762,4 +768,204 @@ footer input{
 
 .ir .banner-buttons{
     padding-left: 0;
+}
+
+/* Regional */
+
+.regional .region-list-container{
+    gap: 1.5rem;
+    padding: 6rem 10rem;
+}
+@media (min-width: 1650px) {
+    .regional .region-list-container{
+        padding: 6rem 15rem;
+    }
+}
+.regional-card{
+    width: 32.5rem;
+    height: auto;
+    border: 1px solid;
+    text-decoration: none;
+    cursor: pointer;
+}
+.regional-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.regional-card h3{
+    min-height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.75rem;
+    padding: 1.25rem 2.5rem;
+    background-color: #000;
+    color: #fff;
+}
+.region-active a{
+    color: white;
+}
+
+/* Africa */
+
+.africa .banner-text h1, .sb .banner-text h1{
+    font-size: 6rem;
+}
+
+
+.country-collapsable-container{
+    padding: 6rem 10rem;
+}
+.collapsible {
+    padding: .5rem .75rem;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.country-name-flag-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.flag-container{
+    width: 3rem;
+    height: 3rem;
+    
+}
+.flag-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+
+.country-collapsable-container .content {
+    padding: 1.5rem 1.5rem 1.5rem 5rem;
+    display: none;
+    overflow: hidden;
+    background-color: #F4F4F4;
+    font-size: 1.25rem;
+    border: 1px solid black;
+    border-top: none;
+}
+
+
+/* resource grid */
+
+.resource-grid{
+    padding: 7rem 10rem;
+    width: 100%;
+}
+
+.resource-grid ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.resource-grid li{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.active-filter-link{
+    color: #EB6928;
+}
+
+.search-filter-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    width: 100%;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+}
+.search input{
+    min-width: 35rem;
+    padding: 1rem;
+    font-size: 1.125rem;
+}
+.search .button{
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+}
+
+.search-filter-container select{
+    min-width: 12rem;
+    padding: 1rem .75rem;
+    border: 1px solid black;
+    font-size: 1.125rem;
+}
+
+.applied-filter{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.applied-filter-name{
+    padding: .5rem 1rem;
+    background: #FFF1EA;
+    border: 1px solid #EB6928;
+    border-radius: 50px;
+}
+
+.resource-grid .latest-news{
+    padding: 0;
+    margin-bottom: 0;
+}
+.resource-grid .card{
+    position: relative;
+}
+.category-tag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #DFD54D;
+    padding: .75rem 2rem;
+    font-weight: normal;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.search-filter-container h3{
+    font-size: 3rem;
+}
+
+.resource-header-v2 .search-filter-container, .resource-header-v2 ul{
+    margin-bottom: 3.5rem ;
+}
+.load-more{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5rem;
+}
+
+
+/* Single post page */
+
+.single-post{
+    display: flex;
 }
