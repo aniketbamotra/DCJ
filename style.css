@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .mulish-200 {
     font-family: "Mulish", sans-serif;
@@ -92,9 +97,18 @@ h1, h2, h3, h4, h5, h6, p{
     background-color: #000;
     color: white;
 }
+.primary-btn:hover{
+    background-color: #EB6928;
+    border-color: #EB6928;
+}
 .secondary-btn{
     background-color: white;
     color: #000;
+}
+.secondary-btn:hover{
+    background-color: #EB6928;
+    color: #fff;
+    border-color: #EB6928;
 }
 
 .region-active, .button-active{
@@ -103,7 +117,11 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .button-active{
-    border: none;
+    border: 1px solid #EB6928;
+}
+.button-active:hover{
+    color: #EB6928;
+    background-color: #fff;
 }
 
 
@@ -494,6 +512,11 @@ nav .main-menu{
     margin-bottom: 1rem;
     align-self: flex-end;
     margin-right: 2rem;
+    cursor: pointer;
+}
+.member-card .forward-btn svg:hover > path{
+    stroke: #EB6928;
+    fill: #EB6928;
 }
 
 
@@ -662,7 +685,7 @@ footer input{
 .gcc .banner-text h1{
     font-size: 2.5rem;
 }
-.gcc .banner-text h1, .gcc .banner-text p, .gcc .banner-buttons{
+.gcc .banner-text h1, .gcc .banner-text p, .gcc .banner-buttons, .op-bottom-banner .banner-buttons, .op-bottom-banner .banner-text h1{
     padding-left: 0;
 }
 
@@ -670,32 +693,32 @@ footer input{
     margin-top: 7rem;
 }
 
-.gcc .bottom-banner{
+.gcc .bottom-banner, .op-bottom-banner{
     justify-content: center;
 }
-.gcc .bottom-banner .banner-text{
+.gcc .bottom-banner .banner-text, .op-bottom-banner .banner-text{
     max-width: none;
 }
-.gcc .bottom-banner h1{
+.gcc .bottom-banner h1, .op-bottom-banner h1{
     font-size: 3.75rem;
     max-width: 70%;
 }
-.gcc .bottom-banner p{
+.gcc .bottom-banner p, .op-bottom-banner p{
     max-width: 50%;
     color: #000;
 }
-.gcc .bottom-banner{
+.gcc .bottom-banner, .op-bottom-banner{
     background-color: transparent;
     padding: 0;
 }
-.gcc .bottom-banner .banner-text{
+.gcc .bottom-banner .banner-text, .op-bottom-banner .banner-text{
     background-color: #421F48;
     padding-top: 5.5rem;
     padding-bottom: 7.75rem;
     padding-left: 6.5rem;
     flex: 1;
 }
-.gcc .bottom-banner-right{
+.gcc .bottom-banner-right, .op-bottom-banner .bottom-banner-right{
     background-color: transparent;
     flex: 1;
 }
@@ -968,4 +991,172 @@ footer input{
 
 .single-post{
     display: flex;
+    padding: 7rem 10rem;
 }
+
+.toc{
+    flex: 1;
+    padding-top: 1.5rem;
+}
+.post-body{
+    flex: 2;
+}
+.toc-title{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.toc-list{
+    padding-left: 1.5rem;
+    margin-bottom: 3rem;
+    font-weight: normal;
+}
+.toc-list li{
+    margin-bottom: .5rem;
+}
+.toc-list a{
+    font-size: 1.25rem;
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.toc-list a:hover{
+    color: #EB6928;
+}
+
+.share-container{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+.share-container p{
+    font-size: 1.25rem;
+}
+
+.post-body .category-tag{
+    position: relative;
+    width: fit-content;
+    border: 1px solid black;
+    margin-bottom: 1.5rem;
+}
+
+.post-body .title{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.post-body .author-date{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.post-body p{
+    font-family: Mulish, sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    color: black;
+    margin-bottom: 3rem;
+}
+.post-body a{
+    color: #EB6928;
+}
+.post-body blockquote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 3rem;
+}
+.post-body blockquote p{
+    font-family: mulish, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    text-align: center;
+    color: #421F48;
+}
+.post-body blockquote cite{
+    font-family: mulish, sans-serif;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    text-align: center;
+    position: relative;
+}
+.post-body blockquote cite::after{
+    position: absolute;
+    content: '';
+    border: .5px solid #DFD54D;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+}
+.post-body figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.post-body figure figcaption{
+    font-family: mulish, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    size: .875rem;
+}
+
+
+/* Our Platform */
+
+.our-platform-sec-2{
+    display: flex;
+    align-items: center;
+    padding: 6.5rem;
+    gap: 2.5rem;
+}
+.our-platform-sec-2 .sec-2-row1, .our-platform-sec-2 .sec-2-content{
+    flex: 1;
+}
+.our-platform-sec-2 .sec-2-row1 h3{
+    font-size: 2.5rem;
+}
+
+.our-platform-sec-2 .sec-2-row1 img{
+    width: 100%;
+    object-fit: cover;
+}
+.our-platform-sec-2 .sec-2-content p{
+    margin-bottom: 1.5rem;
+}
+.our-platform-sec-2 .sec-2-content li{
+    margin-bottom: 1rem;
+}
+
+.our-platform-sec-3{
+    background-color: #421F48;
+    padding: 7rem 6.5rem;
+    margin-bottom: 3rem;
+}
+.our-platform-sec-3 h3, .our-platform-sec-3 p{
+    text-align: center;
+}
+.our-platform-sec-3 h3{
+    font-size: 2.5rem;
+    color: #DCDCC4;
+    margin-bottom: 2rem;
+}
+.our-platform-sec-3 p{
+    color: #fff;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+.sec-3-flex-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.sec-3-card{
+    background-color: #fff;
+    padding: 2rem;
+}
+

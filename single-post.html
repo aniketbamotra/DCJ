@@ -1,220 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Single Post</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo-container">
-          <a href="/index.html"
-            ><img src="./Assets/SVG/logoColor.jpeg" alt="logo" class="logo-img"
-          /></a>
-        </div>
-        <nav>
-          <ul class="mulish-500 main-menu">
-            <li class="main-menu-item">
-              Who we are
-              <svg
-                width="12"
-                height="7"
-                viewBox="0 0 12 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.69922 0.699802C0.882553 0.516469 1.11588 0.424802 1.39922 0.424802C1.68255 0.424803 1.91589 0.516469 2.09922 0.699802L5.99922 4.5998L9.89922 0.699804C10.0826 0.516471 10.3159 0.424804 10.5992 0.424804C10.8826 0.424805 11.1159 0.516471 11.2992 0.699804C11.4826 0.883138 11.5742 1.11647 11.5742 1.3998C11.5742 1.68314 11.4826 1.91647 11.2992 2.0998L6.69922 6.6998C6.59922 6.7998 6.49088 6.8708 6.37422 6.9128C6.25755 6.95414 6.13255 6.9748 5.99922 6.9748C5.86588 6.9748 5.74088 6.95414 5.62422 6.9128C5.50755 6.8708 5.39922 6.7998 5.29922 6.6998L0.699219 2.0998C0.515886 1.91647 0.424218 1.68313 0.424218 1.3998C0.424218 1.11647 0.515886 0.883135 0.69922 0.699802Z"
-                  fill="black"
-                />
-              </svg>
-  
-              <ul class="dropdown-content">
-                <li><a href="/about.html">About Us</a></li>
-                <li><a href="#">Our Platform</a></li>
-                <li>
-                  Our Leaders
-                  <svg
-                    width="7"
-                    height="12"
-                    viewBox="0 0 7 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.699804 11.3C0.516471 11.1167 0.424805 10.8834 0.424805 10.6C0.424805 10.3167 0.516471 10.0834 0.699804 9.90005L4.5998 6.00005L0.699804 2.10005C0.516471 1.91672 0.424805 1.68338 0.424805 1.40005C0.424805 1.11672 0.516471 0.883382 0.699804 0.700048C0.883138 0.516715 1.11647 0.425049 1.3998 0.425049C1.68314 0.425049 1.91647 0.516715 2.0998 0.700048L6.6998 5.30005C6.7998 5.40005 6.8708 5.50838 6.9128 5.62505C6.95414 5.74172 6.9748 5.86672 6.9748 6.00005C6.9748 6.13338 6.95414 6.25838 6.9128 6.37505C6.8708 6.49172 6.7998 6.60005 6.6998 6.70005L2.0998 11.3C1.91647 11.4834 1.68314 11.575 1.3998 11.575C1.11647 11.575 0.883138 11.4834 0.699804 11.3Z"
-                      fill="black"
-                    />
-                  </svg>
-  
-                  <ul class="dropdown-content dropdown-content-side">
+      <div class="logo-container">
+        <a href="/"
+          ><img src="./Assets/SVG/logoColor.jpeg" alt="logo" class="logo-img"
+        /></a>
+      </div>
+      <nav>
+        <ul class="mulish-500 main-menu">
+          <li class="main-menu-item">
+            Who we are
+            <svg
+              width="12"
+              height="7"
+              viewBox="0 0 12 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.69922 0.699802C0.882553 0.516469 1.11588 0.424802 1.39922 0.424802C1.68255 0.424803 1.91589 0.516469 2.09922 0.699802L5.99922 4.5998L9.89922 0.699804C10.0826 0.516471 10.3159 0.424804 10.5992 0.424804C10.8826 0.424805 11.1159 0.516471 11.2992 0.699804C11.4826 0.883138 11.5742 1.11647 11.5742 1.3998C11.5742 1.68314 11.4826 1.91647 11.2992 2.0998L6.69922 6.6998C6.59922 6.7998 6.49088 6.8708 6.37422 6.9128C6.25755 6.95414 6.13255 6.9748 5.99922 6.9748C5.86588 6.9748 5.74088 6.95414 5.62422 6.9128C5.50755 6.8708 5.39922 6.7998 5.29922 6.6998L0.699219 2.0998C0.515886 1.91647 0.424218 1.68313 0.424218 1.3998C0.424218 1.11647 0.515886 0.883135 0.69922 0.699802Z"
+                fill="black"
+              />
+            </svg>
+
+            <ul class="dropdown-content">
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/our-platform.html">Our Platform</a></li>
+              <li>
+                Our Leaders
+                <svg
+                  width="7"
+                  height="12"
+                  viewBox="0 0 7 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.699804 11.3C0.516471 11.1167 0.424805 10.8834 0.424805 10.6C0.424805 10.3167 0.516471 10.0834 0.699804 9.90005L4.5998 6.00005L0.699804 2.10005C0.516471 1.91672 0.424805 1.68338 0.424805 1.40005C0.424805 1.11672 0.516471 0.883382 0.699804 0.700048C0.883138 0.516715 1.11647 0.425049 1.3998 0.425049C1.68314 0.425049 1.91647 0.516715 2.0998 0.700048L6.6998 5.30005C6.7998 5.40005 6.8708 5.50838 6.9128 5.62505C6.95414 5.74172 6.9748 5.86672 6.9748 6.00005C6.9748 6.13338 6.95414 6.25838 6.9128 6.37505C6.8708 6.49172 6.7998 6.60005 6.6998 6.70005L2.0998 11.3C1.91647 11.4834 1.68314 11.575 1.3998 11.575C1.11647 11.575 0.883138 11.4834 0.699804 11.3Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <ul class="dropdown-content dropdown-content-side">
                     <li><a href="/gcc.html">Global Coordinating committee</a></li>
                     <li><a href="/gs.html">Global Secretariat</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="/international-regions.html"
-                    >How to become DCJ members?</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="main-menu-item">
-              Our Regions
-              <svg
-                width="12"
-                height="7"
-                viewBox="0 0 12 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.69922 0.699802C0.882553 0.516469 1.11588 0.424802 1.39922 0.424802C1.68255 0.424803 1.91589 0.516469 2.09922 0.699802L5.99922 4.5998L9.89922 0.699804C10.0826 0.516471 10.3159 0.424804 10.5992 0.424804C10.8826 0.424805 11.1159 0.516471 11.2992 0.699804C11.4826 0.883138 11.5742 1.11647 11.5742 1.3998C11.5742 1.68314 11.4826 1.91647 11.2992 2.0998L6.69922 6.6998C6.59922 6.7998 6.49088 6.8708 6.37422 6.9128C6.25755 6.95414 6.13255 6.9748 5.99922 6.9748C5.86588 6.9748 5.74088 6.95414 5.62422 6.9128C5.50755 6.8708 5.39922 6.7998 5.29922 6.6998L0.699219 2.0998C0.515886 1.91647 0.424218 1.68313 0.424218 1.3998C0.424218 1.11647 0.515886 0.883135 0.69922 0.699802Z"
-                  fill="black"
-                />
-              </svg>
-  
-              <ul class="dropdown-content">
-                <li>Africa</li>
-                <li>Latin America and the Caribbean</li>
-                <li>Asia and the Pacific</li>
-                <li>Norh America and Europe</li>
-              </ul>
-            </li>
-            <li class="main-menu-item">
-              Climate Talk
-              <svg
-                width="12"
-                height="7"
-                viewBox="0 0 12 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.69922 0.699802C0.882553 0.516469 1.11588 0.424802 1.39922 0.424802C1.68255 0.424803 1.91589 0.516469 2.09922 0.699802L5.99922 4.5998L9.89922 0.699804C10.0826 0.516471 10.3159 0.424804 10.5992 0.424804C10.8826 0.424805 11.1159 0.516471 11.2992 0.699804C11.4826 0.883138 11.5742 1.11647 11.5742 1.3998C11.5742 1.68314 11.4826 1.91647 11.2992 2.0998L6.69922 6.6998C6.59922 6.7998 6.49088 6.8708 6.37422 6.9128C6.25755 6.95414 6.13255 6.9748 5.99922 6.9748C5.86588 6.9748 5.74088 6.95414 5.62422 6.9128C5.50755 6.8708 5.39922 6.7998 5.29922 6.6998L0.699219 2.0998C0.515886 1.91647 0.424218 1.68313 0.424218 1.3998C0.424218 1.11647 0.515886 0.883135 0.69922 0.699802Z"
-                  fill="black"
-                />
-              </svg>
-  
-              <ul class="dropdown-content">
-                <li>SB</li>
-                <li>COP</li>
-              </ul>
-            </li>
-            <li class="main-menu-item">
-              Resources
-              <svg
-                width="12"
-                height="7"
-                viewBox="0 0 12 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.69922 0.699802C0.882553 0.516469 1.11588 0.424802 1.39922 0.424802C1.68255 0.424803 1.91589 0.516469 2.09922 0.699802L5.99922 4.5998L9.89922 0.699804C10.0826 0.516471 10.3159 0.424804 10.5992 0.424804C10.8826 0.424805 11.1159 0.516471 11.2992 0.699804C11.4826 0.883138 11.5742 1.11647 11.5742 1.3998C11.5742 1.68314 11.4826 1.91647 11.2992 2.0998L6.69922 6.6998C6.59922 6.7998 6.49088 6.8708 6.37422 6.9128C6.25755 6.95414 6.13255 6.9748 5.99922 6.9748C5.86588 6.9748 5.74088 6.95414 5.62422 6.9128C5.50755 6.8708 5.39922 6.7998 5.29922 6.6998L0.699219 2.0998C0.515886 1.91647 0.424218 1.68313 0.424218 1.3998C0.424218 1.11647 0.515886 0.883135 0.69922 0.699802Z"
-                  fill="black"
-                />
-              </svg>
-  
-              <ul class="dropdown-content">
-                <li>Podcast</li>
-                <li>Videos</li>
-                <li>Publications</li>
-                <li>Articles</li>
-                <li>Reports</li>
-              </ul>
-            </li>
-            <li class="main-menu-item">
-              Media
-              <svg
-                width="12"
-                height="7"
-                viewBox="0 0 12 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.69922 0.699802C0.882553 0.516469 1.11588 0.424802 1.39922 0.424802C1.68255 0.424803 1.91589 0.516469 2.09922 0.699802L5.99922 4.5998L9.89922 0.699804C10.0826 0.516471 10.3159 0.424804 10.5992 0.424804C10.8826 0.424805 11.1159 0.516471 11.2992 0.699804C11.4826 0.883138 11.5742 1.11647 11.5742 1.3998C11.5742 1.68314 11.4826 1.91647 11.2992 2.0998L6.69922 6.6998C6.59922 6.7998 6.49088 6.8708 6.37422 6.9128C6.25755 6.95414 6.13255 6.9748 5.99922 6.9748C5.86588 6.9748 5.74088 6.95414 5.62422 6.9128C5.50755 6.8708 5.39922 6.7998 5.29922 6.6998L0.699219 2.0998C0.515886 1.91647 0.424218 1.68313 0.424218 1.3998C0.424218 1.11647 0.515886 0.883135 0.69922 0.699802Z"
-                  fill="black"
-                />
-              </svg>
-  
-              <ul class="dropdown-content">
-                <li>News</li>
-                <li>Press release</li>
-              </ul>
-            </li>
-            <li class="main-menu-item">Contact Us</li>
-            <li class="main-menu-item">
-              English
-              <svg
-                width="12"
-                height="7"
-                viewBox="0 0 12 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.69922 0.699802C0.882553 0.516469 1.11588 0.424802 1.39922 0.424802C1.68255 0.424803 1.91589 0.516469 2.09922 0.699802L5.99922 4.5998L9.89922 0.699804C10.0826 0.516471 10.3159 0.424804 10.5992 0.424804C10.8826 0.424805 11.1159 0.516471 11.2992 0.699804C11.4826 0.883138 11.5742 1.11647 11.5742 1.3998C11.5742 1.68314 11.4826 1.91647 11.2992 2.0998L6.69922 6.6998C6.59922 6.7998 6.49088 6.8708 6.37422 6.9128C6.25755 6.95414 6.13255 6.9748 5.99922 6.9748C5.86588 6.9748 5.74088 6.95414 5.62422 6.9128C5.50755 6.8708 5.39922 6.7998 5.29922 6.6998L0.699219 2.0998C0.515886 1.91647 0.424218 1.68313 0.424218 1.3998C0.424218 1.11647 0.515886 0.883135 0.69922 0.699802Z"
-                  fill="black"
-                />
-              </svg>
-  
-              <ul class="dropdown-content">
-                <li>English</li>
-                <li>Spanish</li>
-                <li>French</li>
-              </ul>
-            </li>
-          </ul>
-          <button class="button mulish-600 button-active">Donate Now</button>
-        </nav>
-      </header>
-
-      <main class="single-post">
-        <div class="toc">
-            <h4 class="mulish-700 toc-title">Table of Content</h4>
-            <ul class="toc-list">
-                <li><a href="#">Introduction</a></li>
-                <li><a href="#">Introduction</a></li>
-                <li><a href="#">Introduction</a></li>
-                <li><a href="#">Introduction</a></li>
-                <li><a href="#">Introduction</a></li>
-                <li><a href="#">Introduction</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/international-regions.html"
+                  >How to become DCJ members?</a
+                >
+              </li>
             </ul>
-            <div class="share-container">
-                <p class="mulish-700">Share</p>
-                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z" fill="#EB6928"/>
-                    </svg>
-                    </a>
-                    <a href="#">
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.5 1.5C17.305 1.5 22 6.195 22 12C22 17.805 17.305 22.5 11.5 22.5C5.695 22.5 1 17.805 1 12C1 6.195 5.695 1.5 11.5 1.5ZM9.58 17.535C14.23 17.535 16.78 13.68 16.78 10.335V10.005C17.275 9.645 17.71 9.195 18.04 8.685C17.59 8.88 17.095 9.015 16.585 9.09C17.11 8.775 17.515 8.28 17.695 7.695C17.2 7.98 16.66 8.19 16.09 8.31C15.625 7.815 14.965 7.515 14.245 7.515C12.85 7.515 11.71 8.655 11.71 10.05C11.71 10.245 11.725 10.44 11.785 10.62C9.685 10.515 7.81 9.51 6.565 7.98C6.355 8.355 6.22 8.79 6.22 9.255C6.22 10.125 6.67 10.905 7.345 11.355C6.925 11.355 6.535 11.235 6.205 11.04V11.07C6.205 12.3 7.075 13.32 8.23 13.56C8.02 13.62 7.795 13.65 7.57 13.65C7.405 13.65 7.255 13.635 7.09 13.605C7.405 14.61 8.35 15.345 9.445 15.36C8.575 16.035 7.48 16.44 6.295 16.44C6.085 16.44 5.89 16.44 5.695 16.41C6.805 17.13 8.14 17.55 9.565 17.55" fill="#EB6928"/>
-                            </svg>
-                            
-                    </a>
-                    <a href="#">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="#EB6928"/>
-                            </svg>
-                            
-                    </a>
-            </div>
+          </li>
+          <li class="main-menu-item">
+            Our Regions
+            <svg
+              width="12"
+              height="7"
+              viewBox="0 0 12 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.69922 0.699802C0.882553 0.516469 1.11588 0.424802 1.39922 0.424802C1.68255 0.424803 1.91589 0.516469 2.09922 0.699802L5.99922 4.5998L9.89922 0.699804C10.0826 0.516471 10.3159 0.424804 10.5992 0.424804C10.8826 0.424805 11.1159 0.516471 11.2992 0.699804C11.4826 0.883138 11.5742 1.11647 11.5742 1.3998C11.5742 1.68314 11.4826 1.91647 11.2992 2.0998L6.69922 6.6998C6.59922 6.7998 6.49088 6.8708 6.37422 6.9128C6.25755 6.95414 6.13255 6.9748 5.99922 6.9748C5.86588 6.9748 5.74088 6.95414 5.62422 6.9128C5.50755 6.8708 5.39922 6.7998 5.29922 6.6998L0.699219 2.0998C0.515886 1.91647 0.424218 1.68313 0.424218 1.3998C0.424218 1.11647 0.515886 0.883135 0.69922 0.699802Z"
+                fill="black"
+              />
+            </svg>
+
+            <ul class="dropdown-content">
+              <li><a href="/africa.html">Africa</a></li>
+              <li><a href="/latin-america-caribbean.html">Latin America and the Caribbean</a></li>
+              <li><a href="/asia-pacific.html">Asia and the Pacific</a></li>
+              <li><a href="/europe-america.html">Norh America and Europe</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-item">
+            Climate Talk
+            <svg
+              width="12"
+              height="7"
+              viewBox="0 0 12 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.69922 0.699802C0.882553 0.516469 1.11588 0.424802 1.39922 0.424802C1.68255 0.424803 1.91589 0.516469 2.09922 0.699802L5.99922 4.5998L9.89922 0.699804C10.0826 0.516471 10.3159 0.424804 10.5992 0.424804C10.8826 0.424805 11.1159 0.516471 11.2992 0.699804C11.4826 0.883138 11.5742 1.11647 11.5742 1.3998C11.5742 1.68314 11.4826 1.91647 11.2992 2.0998L6.69922 6.6998C6.59922 6.7998 6.49088 6.8708 6.37422 6.9128C6.25755 6.95414 6.13255 6.9748 5.99922 6.9748C5.86588 6.9748 5.74088 6.95414 5.62422 6.9128C5.50755 6.8708 5.39922 6.7998 5.29922 6.6998L0.699219 2.0998C0.515886 1.91647 0.424218 1.68313 0.424218 1.3998C0.424218 1.11647 0.515886 0.883135 0.69922 0.699802Z"
+                fill="black"
+              />
+            </svg>
+
+            <ul class="dropdown-content">
+              <li><a href="/sb.html">SB</a></li>
+              <li><a href="/cop.html">COP</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-item">
+            Resources
+            <svg
+              width="12"
+              height="7"
+              viewBox="0 0 12 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.69922 0.699802C0.882553 0.516469 1.11588 0.424802 1.39922 0.424802C1.68255 0.424803 1.91589 0.516469 2.09922 0.699802L5.99922 4.5998L9.89922 0.699804C10.0826 0.516471 10.3159 0.424804 10.5992 0.424804C10.8826 0.424805 11.1159 0.516471 11.2992 0.699804C11.4826 0.883138 11.5742 1.11647 11.5742 1.3998C11.5742 1.68314 11.4826 1.91647 11.2992 2.0998L6.69922 6.6998C6.59922 6.7998 6.49088 6.8708 6.37422 6.9128C6.25755 6.95414 6.13255 6.9748 5.99922 6.9748C5.86588 6.9748 5.74088 6.95414 5.62422 6.9128C5.50755 6.8708 5.39922 6.7998 5.29922 6.6998L0.699219 2.0998C0.515886 1.91647 0.424218 1.68313 0.424218 1.3998C0.424218 1.11647 0.515886 0.883135 0.69922 0.699802Z"
+                fill="black"
+              />
+            </svg>
+
+            <ul class="dropdown-content">
+              <li>Podcast</li>
+              <li><a href="/videos.html">Videos</a></li>
+              <li><a href="/videos.html">Publications</a></li>
+              <li><a href="/videos.html">Articles</a></li>
+              <li><a href="/videos.html">Reports</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-item">
+            Media
+            <svg
+              width="12"
+              height="7"
+              viewBox="0 0 12 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.69922 0.699802C0.882553 0.516469 1.11588 0.424802 1.39922 0.424802C1.68255 0.424803 1.91589 0.516469 2.09922 0.699802L5.99922 4.5998L9.89922 0.699804C10.0826 0.516471 10.3159 0.424804 10.5992 0.424804C10.8826 0.424805 11.1159 0.516471 11.2992 0.699804C11.4826 0.883138 11.5742 1.11647 11.5742 1.3998C11.5742 1.68314 11.4826 1.91647 11.2992 2.0998L6.69922 6.6998C6.59922 6.7998 6.49088 6.8708 6.37422 6.9128C6.25755 6.95414 6.13255 6.9748 5.99922 6.9748C5.86588 6.9748 5.74088 6.95414 5.62422 6.9128C5.50755 6.8708 5.39922 6.7998 5.29922 6.6998L0.699219 2.0998C0.515886 1.91647 0.424218 1.68313 0.424218 1.3998C0.424218 1.11647 0.515886 0.883135 0.69922 0.699802Z"
+                fill="black"
+              />
+            </svg>
+
+            <ul class="dropdown-content">
+              <li><a href="/videos.html">News</a></li>
+              <li><a href="/videos.html">Press release</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-item">Contact Us</li>
+          <li class="main-menu-item">
+            English
+            <svg
+              width="12"
+              height="7"
+              viewBox="0 0 12 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.69922 0.699802C0.882553 0.516469 1.11588 0.424802 1.39922 0.424802C1.68255 0.424803 1.91589 0.516469 2.09922 0.699802L5.99922 4.5998L9.89922 0.699804C10.0826 0.516471 10.3159 0.424804 10.5992 0.424804C10.8826 0.424805 11.1159 0.516471 11.2992 0.699804C11.4826 0.883138 11.5742 1.11647 11.5742 1.3998C11.5742 1.68314 11.4826 1.91647 11.2992 2.0998L6.69922 6.6998C6.59922 6.7998 6.49088 6.8708 6.37422 6.9128C6.25755 6.95414 6.13255 6.9748 5.99922 6.9748C5.86588 6.9748 5.74088 6.95414 5.62422 6.9128C5.50755 6.8708 5.39922 6.7998 5.29922 6.6998L0.699219 2.0998C0.515886 1.91647 0.424218 1.68313 0.424218 1.3998C0.424218 1.11647 0.515886 0.883135 0.69922 0.699802Z"
+                fill="black"
+              />
+            </svg>
+
+            <ul class="dropdown-content">
+              <li>English</li>
+              <li>Spanish</li>
+              <li>French</li>
+            </ul>
+          </li>
+        </ul>
+        <button class="button mulish-600 button-active">Donate Now</button>
+      </nav>
+    </header>
+
+    <main class="single-post">
+      <div class="toc">
+        <h4 class="mulish-700 toc-title">Table of Content</h4>
+        <ul class="toc-list">
+          <li><a href="#" class="mulish-500">Introduction</a></li>
+          <li><a href="#" class="mulish-500">Introduction</a></li>
+          <li><a href="#" class="mulish-500">Introduction</a></li>
+          <li><a href="#" class="mulish-500">Introduction</a></li>
+          <li><a href="#" class="mulish-500">Introduction</a></li>
+          <li><a href="#" class="mulish-500">Introduction</a></li>
+        </ul>
+        <div class="share-container">
+          <p class="mulish-700">Share</p>
+          <a href="#"
+            ><svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z"
+                fill="#EB6928"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.5 1.5C17.305 1.5 22 6.195 22 12C22 17.805 17.305 22.5 11.5 22.5C5.695 22.5 1 17.805 1 12C1 6.195 5.695 1.5 11.5 1.5ZM9.58 17.535C14.23 17.535 16.78 13.68 16.78 10.335V10.005C17.275 9.645 17.71 9.195 18.04 8.685C17.59 8.88 17.095 9.015 16.585 9.09C17.11 8.775 17.515 8.28 17.695 7.695C17.2 7.98 16.66 8.19 16.09 8.31C15.625 7.815 14.965 7.515 14.245 7.515C12.85 7.515 11.71 8.655 11.71 10.05C11.71 10.245 11.725 10.44 11.785 10.62C9.685 10.515 7.81 9.51 6.565 7.98C6.355 8.355 6.22 8.79 6.22 9.255C6.22 10.125 6.67 10.905 7.345 11.355C6.925 11.355 6.535 11.235 6.205 11.04V11.07C6.205 12.3 7.075 13.32 8.23 13.56C8.02 13.62 7.795 13.65 7.57 13.65C7.405 13.65 7.255 13.635 7.09 13.605C7.405 14.61 8.35 15.345 9.445 15.36C8.575 16.035 7.48 16.44 6.295 16.44C6.085 16.44 5.89 16.44 5.695 16.41C6.805 17.13 8.14 17.55 9.565 17.55"
+                fill="#EB6928"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
+                fill="#EB6928"
+              />
+            </svg>
+          </a>
         </div>
-        <div class="post-body">
-            <div class="category mulish-700">INTERVENTION</div>
-            <h1 class="title brawler-700">Interventions by global campaign to demand climate justice at SB56 opening plenary session</h1>
-            <div class="author-date"><span>July 10, 2023</span><span>RACHITA</span></div>
-            <p>Mr Chair, This statement is delivered by Gadir Lavadenz on behalf of the <a href="#">Global Campaign to Demand Climate Justice</a>. We want to clearly express that NO COP overseen by a fossil fuel executive can be seen as a COP that will deliver what people and the planet are owed. The science is clear: there’s no more room for fossil fuels on a living planet. Coal, oil and gas are by far the largest contributor to global climate change, accounting for 86% of all carbon dioxide emissions. Real, rapid, and equitable emission cuts are needed in line with principles of justice and equity and that cannot be achieved through a hyper focus on dangerous distractions such as carbon markets, offsets, nature based solutions and incredibly dangerous and ungovernable geoengineering– all of which allow for continued pollution and disrespect historical responsibility.</p>
-            <blockquote><p>This is quote</p>
-            <cite>This is cite</cite></blockquote>
-            <figure>
-                <img src="" alt="">
-                <figcaption>Caption</figcaption>
-            </figure>
+      </div>
+      <div class="post-body">
+        <div class="category-tag mulish-700">INTERVENTION</div>
+        <h1 class="title brawler-700">
+          Interventions by global campaign to demand climate justice at SB56
+          opening plenary session
+        </h1>
+        <div class="author-date mulish-700">
+          <span>July 10, 2023</span><span> | </span><span>RACHITA</span>
         </div>
-      </main>
-</body>
+        <p>
+          Mr Chair, This statement is delivered by Gadir Lavadenz on behalf of
+          the <a href="#">Global Campaign to Demand Climate Justice</a>. We want
+          to clearly express that NO COP overseen by a fossil fuel executive can
+          be seen as a COP that will deliver what people and the planet are
+          owed. The science is clear: there’s no more room for fossil fuels on a
+          living planet. Coal, oil and gas are by far the largest contributor to
+          global climate change, accounting for 86% of all carbon dioxide
+          emissions. Real, rapid, and equitable emission cuts are needed in line
+          with principles of justice and equity and that cannot be achieved
+          through a hyper focus on dangerous distractions such as carbon
+          markets, offsets, nature based solutions and incredibly dangerous and
+          ungovernable geoengineering– all of which allow for continued
+          pollution and disrespect historical responsibility.
+        </p>
+        <blockquote>
+          <p>
+            “We are the last people who can prevent catastrophe on the planet.
+            We have no excuse for failure.”
+          </p>
+          <cite>This is cite</cite>
+        </blockquote>
+        <p>
+          The world is losing faith in this process and we are running out of
+          time. We do not only wish for fruitful discussion, but expect the
+          delivery of concrete measures that include: establishing an
+          Accountability Framework to end the ability of polluting interests to
+          undermine climate action; a publicly funded and operationalized loss
+          and damage finance facility; a pathway for a fast and equitable fossil
+          fuels phase out; the urgent global collaboration needed to advance
+          real solutions through <a href="#">article 6.8</a>; a global stock
+          take that is holistic and non-mitigation centric; a just transition
+          work program that spurs the urgently needed transitions deeply rooted
+          in equity.
+        </p>
+        <figure>
+          <img src="/Assets/Images/BannerImage.png" alt="" />
+          <figcaption>Source: 17 November 2022, Sharm El Sheikh–Hundreds of climate activists, Indigenous representatives, human rights activists, environmental defenders, workers and feminist groups gathered today for the People’s Plenary at COP27.</figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-logo-container">
+          <img src="./Assets/SVG/DCJ-logo_black 1.svg" alt="logo">
+      </div>
+      <div class="who-we-are">
+          <p class="mulish-800">Who we are</p>
+          <ul>
+              <li class="mulish-600">Our Platform</li>
+              <li class="mulish-600">About Us</li>
+              <li class="mulish-600">Global Coordinating Committee</li>
+              <li class="mulish-600">Global Secretariat</li>
+              <li class="mulish-600">DCJ Members</li>
+          </ul>
+      </div>
+      <div class="our-regions">
+          <p class="mulish-800">Our Regions</p>
+          <ul>
+              <li class="mulish-600">Africa</li>
+              <li class="mulish-600">Latin America & The Caribbean</li>
+              <li class="mulish-600">Asia & The Pacific</li>
+              <li class="mulish-600">North America & Europe</li>
+          </ul>
+      </div>
+      <div class="climate-talk">
+          <p class="mulish-800">Climate Talk</p>
+          <ul>
+              <li class="mulish-600">SB</li>
+              <li class="mulish-600">COP</li>
+          </ul>
+      </div>
+      <div class="misc">
+          <ul>
+              <li class="mulish-800">Resources</li>
+              <li class="mulish-800">Media</li>
+          </ul>
+      </div>
+      <div class="subscribe">
+          <p class="mulish-800">Subscribe to our newsletter</p>
+          <input type="email" name="email" id="email" placeholder="Enter your email" class="mulish-500">
+          <button class="button">Subscribe</button>
+      </div>
+  </footer>
+
+  </body>
 </html>
