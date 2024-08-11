@@ -272,6 +272,9 @@ nav .main-menu{
 .cop-section .content ul{
     margin-bottom: 3rem;
 }
+.cop-section li, .campaign-section li{
+    margin-bottom: 1rem;
+}
 
 
 /* 5. Latest News */
@@ -576,37 +579,47 @@ nav .main-menu{
     margin-bottom: 2.5rem;
 }
 
+.bottom-banner h1, .bottom-banner p, .bottom-banner .banner-buttons{
+    padding-left: 10rem;
+}
+
 /* bottom banner 2 */
 
 .bottom-banner-2{
-    justify-content: center;
+    display: flex;
+    align-items: center;
 }
-.bottom-banner-2 .banner-text{
+.bottom-banner-text{
+    height: 100%;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+    padding-left: 6.5rem;
+    min-width: 40vw;
+    max-width: 50vw;
+    background: #421F48;
     max-width: none;
 }
 .bottom-banner-2 h1{
     color: white;
     font-size: 3.75rem;
-    padding-left: 2rem;
 }
  .bottom-banner-2 p{
-    max-width: 50%;
     color: #000;
+    width: 400px;
 }
 .bottom-banner-2{
     background-color: transparent;
     padding: 0;
-}
-.bottom-banner-2 .banner-text{
-    background-color: #421F48;
-    padding-top: 5.5rem;
-    padding-bottom: 7.75rem;
-    padding-left: 6.5rem;
-    flex: 1;
+    border-top: 1px solid black;
 }
  .bottom-banner-right{
+    min-width: 50vw;
+    padding-left: 10rem;
+    padding-right: 10rem;
     background-color: transparent;
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 
@@ -614,11 +627,11 @@ nav .main-menu{
 
 footer{
     border-top: 1px solid black;
-    margin-top: 3rem;
+    
     margin-bottom: 5rem;
     display: flex;
     justify-content: space-between;
-    padding: 3rem 7rem 0rem 7rem;
+    padding: 6rem 7rem 0rem 7rem;
 }
 footer  img{
     width: 5rem;
@@ -680,66 +693,41 @@ footer input{
 }
 .gcc .banner .banner-text, .ir .banner .banner-text{
     padding-left: 5rem;
-    max-width: 40%;
+    max-width: 45%;
 }
 .gcc .banner-text h1{
     font-size: 2.5rem;
 }
-.gcc .banner-text h1, .gcc .banner-text p, .gcc .banner-buttons, .op-bottom-banner .banner-buttons, .op-bottom-banner .banner-text h1{
+.gcc .banner-text h1, .gcc .banner-text p, .gcc .banner-buttons{
     padding-left: 0;
 }
 
 .gcc .working-group {
     margin-top: 7rem;
 }
-
-.gcc .bottom-banner, .op-bottom-banner{
-    justify-content: center;
+.gcc .banner-image, .ir .banner-image{
+    max-width: 50vw;
 }
-.gcc .bottom-banner .banner-text, .op-bottom-banner .banner-text{
-    max-width: none;
-}
-.gcc .bottom-banner h1, .op-bottom-banner h1{
-    font-size: 3.75rem;
-    max-width: 70%;
-}
-.gcc .bottom-banner p, .op-bottom-banner p{
-    max-width: 50%;
-    color: #000;
-}
-.gcc .bottom-banner, .op-bottom-banner{
-    background-color: transparent;
-    padding: 0;
-}
-.gcc .bottom-banner .banner-text, .op-bottom-banner .banner-text{
-    background-color: #421F48;
-    padding-top: 5.5rem;
-    padding-bottom: 7.75rem;
-    padding-left: 6.5rem;
-    flex: 1;
-}
-.gcc .bottom-banner-right, .op-bottom-banner .bottom-banner-right{
-    background-color: transparent;
-    flex: 1;
-}
-
 
 
 /* International Regions */
 
 
 .ir .banner .banner-text h1{
-    font-size: 3rem;
+    font-size: 2.75rem;
     margin-bottom: 1rem;
     padding-left: 0;
 }
 .ir .banner .banner-text ul{
     font-size: 1.125rem;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
+}
+.ir .banner li{
+    margin-bottom: 1rem;
 }
 
 .ir .banner-image{
-    height: 50vh;
+    height: 100%;
     width: 100%;
 }
 .ir .banner-image img{
@@ -783,10 +771,14 @@ footer input{
 }
 .region-list-container li{
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 .region-list-container a{
     text-decoration: none;
     color: black;
+}
+.region-list-container a:hover{
+    color: #EB6928;
 }
 
 .ir .banner-buttons{
@@ -835,6 +827,9 @@ footer input{
 
 .africa .banner-text h1, .sb .banner-text h1{
     font-size: 6rem;
+}
+.africa .banner{
+    margin-bottom: 6rem;
 }
 
 
@@ -914,13 +909,13 @@ footer input{
     justify-content: space-between;
     gap: .75rem;
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 .search{
     display: flex;
     justify-content: center;
     align-items: stretch;
-    margin-bottom: 2rem;
     border: 1px solid black;
 }
 .search input{
@@ -1160,3 +1155,8 @@ footer input{
     padding: 2rem;
 }
 
+/* climate-campaign */
+
+.climate-campaign .banner-text h1{
+    font-size: 3.125rem;
+}
