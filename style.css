@@ -667,18 +667,19 @@ nav .main-menu{
         padding: 0rem 3rem;
     }
     .header h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .latest-podcasts .content{
         padding: 1rem 0rem;
     }
     .latest-podcasts .icon{
-        padding: 5rem 3rem;
+        padding: 7rem 3rem;
     }
 }
 @media (max-width: 425px) {
     .latest-podcasts, .dcj-members{
         padding: 0rem 1.5rem;
+        margin: 3rem 0;
     }
     .latest-podcasts .content h3{
         font-size: 1rem;
