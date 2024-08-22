@@ -553,8 +553,13 @@ nav .main-menu{
     }
 }
 @media (max-width: 425px) {
+    .video-section{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
     .homepage-video{
-        width: 400px;
+        width: 360px;
+        height: 200px;
     }
 }
 
