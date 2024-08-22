@@ -13,7 +13,7 @@
         ><img src="./Assets/SVG/logoColor.jpeg" alt="logo" class="logo-img"
       /></a>
     </div>
-    <nav>
+    <nav class="desktop-memu">
       <ul class="mulish-500 main-menu">
         <li class="main-menu-item">
           Who we are
@@ -54,32 +54,32 @@
               </ul>
             </li>
             <li>
+              Our Regions
+              <svg
+                width="7"
+                height="12"
+                viewBox="0 0 7 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.699804 11.3C0.516471 11.1167 0.424805 10.8834 0.424805 10.6C0.424805 10.3167 0.516471 10.0834 0.699804 9.90005L4.5998 6.00005L0.699804 2.10005C0.516471 1.91672 0.424805 1.68338 0.424805 1.40005C0.424805 1.11672 0.516471 0.883382 0.699804 0.700048C0.883138 0.516715 1.11647 0.425049 1.3998 0.425049C1.68314 0.425049 1.91647 0.516715 2.0998 0.700048L6.6998 5.30005C6.7998 5.40005 6.8708 5.50838 6.9128 5.62505C6.95414 5.74172 6.9748 5.86672 6.9748 6.00005C6.9748 6.13338 6.95414 6.25838 6.9128 6.37505C6.8708 6.49172 6.7998 6.60005 6.6998 6.70005L2.0998 11.3C1.91647 11.4834 1.68314 11.575 1.3998 11.575C1.11647 11.575 0.883138 11.4834 0.699804 11.3Z"
+                  fill="black"
+                />
+              </svg>
+
+              <ul class="dropdown-content dropdown-content-side">
+                  <li><a href="/africa-article.html">Latin America and the Caribbean</a></li>
+                  <li><a href="/africa-article.html">Africa</a></li>
+                  <li><a href="/africa-article.html">Asia and the Pacific</a></li>
+                  <li><a href="/africa-article.html">Norh America and Europe</a></li>
+              </ul>
+            </li>
+            <li>
               <a href="/international-regions.html"
                 >DCJ members?</a
               >
             </li>
-          </ul>
-        </li>
-        <li class="main-menu-item">
-          Our Regions
-          <svg
-            width="12"
-            height="7"
-            viewBox="0 0 12 7"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.69922 0.699802C0.882553 0.516469 1.11588 0.424802 1.39922 0.424802C1.68255 0.424803 1.91589 0.516469 2.09922 0.699802L5.99922 4.5998L9.89922 0.699804C10.0826 0.516471 10.3159 0.424804 10.5992 0.424804C10.8826 0.424805 11.1159 0.516471 11.2992 0.699804C11.4826 0.883138 11.5742 1.11647 11.5742 1.3998C11.5742 1.68314 11.4826 1.91647 11.2992 2.0998L6.69922 6.6998C6.59922 6.7998 6.49088 6.8708 6.37422 6.9128C6.25755 6.95414 6.13255 6.9748 5.99922 6.9748C5.86588 6.9748 5.74088 6.95414 5.62422 6.9128C5.50755 6.8708 5.39922 6.7998 5.29922 6.6998L0.699219 2.0998C0.515886 1.91647 0.424218 1.68313 0.424218 1.3998C0.424218 1.11647 0.515886 0.883135 0.69922 0.699802Z"
-              fill="black"
-            />
-          </svg>
-
-          <ul class="dropdown-content">
-            <li><a href="/africa-article.html">Africa</a></li>
-            <li><a href="/africa-article.html">Latin America and the Caribbean</a></li>
-            <li><a href="/africa-article.html">Asia and the Pacific</a></li>
-            <li><a href="/africa-article.html">Norh America and Europe</a></li>
           </ul>
         </li>
         <li class="main-menu-item">
@@ -161,8 +161,8 @@
           </svg>
 
           <ul class="dropdown-content">
-            <li>Podcast</li>
-            <li><a href="/videos.html">All Publications</a></li>
+            <li>All Publications</li>
+            <li><a href="/videos.html">Podcast</a></li>
             <li><a href="/videos.html">Briefer</a></li>
             <li><a href="/videos.html">Reports</a></li>
             <li><a href="/videos.html">Article</a></li>
@@ -213,19 +213,191 @@
           </ul>
         </li>
       </ul>
-      <button class="button mulish-600 button-active">Donate Now</button>
+      <!-- <button class="button mulish-600 button-active">Donate Now</button> -->
     </nav>
+    <div class="open-btn" onclick="toggleMenu()">☰</div>
   </header>
+
+  <!-- mobile menu -->
+  <nav class="mobile-menu">
+    <div id="menu" class="menu">
+      <a href="#" class="close-btn" onclick="toggleMenu()">×</a>
+      <div class="country-collapsable-container">
+        <div class="country-collapsable-wrapper">
+          <div class="collapsable-item">
+            <div class="collapsible">
+              <div class="country-name-flag-container">
+                <h4 class="mulish-700">Who we are</h4>
+              </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.69922 8.6998C6.88255 8.51647 7.11588 8.4248 7.39922 8.4248C7.68255 8.4248 7.91589 8.51647 8.09922 8.6998L11.9992 12.5998L15.8992 8.6998C16.0826 8.51647 16.3159 8.4248 16.5992 8.4248C16.8826 8.4248 17.1159 8.51647 17.2992 8.6998C17.4826 8.88314 17.5742 9.11647 17.5742 9.3998C17.5742 9.68314 17.4826 9.91647 17.2992 10.0998L12.6992 14.6998C12.5992 14.7998 12.4909 14.8708 12.3742 14.9128C12.2576 14.9541 12.1326 14.9748 11.9992 14.9748C11.8659 14.9748 11.7409 14.9541 11.6242 14.9128C11.5076 14.8708 11.3992 14.7998 11.2992 14.6998L6.69922 10.0998C6.51589 9.91647 6.42422 9.68313 6.42422 9.3998C6.42422 9.11647 6.51589 8.88314 6.69922 8.6998Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="content mulish-500">
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="our-platform.html">Our Platform</a></li>
+                <li>
+                  <div class="collapsable-item">
+                    <div class="collapsible">
+                      <div class="country-name-flag-container">
+                        <h4 class="mulish-700">Our Leaders</h4>
+                      </div>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.69922 8.6998C6.88255 8.51647 7.11588 8.4248 7.39922 8.4248C7.68255 8.4248 7.91589 8.51647 8.09922 8.6998L11.9992 12.5998L15.8992 8.6998C16.0826 8.51647 16.3159 8.4248 16.5992 8.4248C16.8826 8.4248 17.1159 8.51647 17.2992 8.6998C17.4826 8.88314 17.5742 9.11647 17.5742 9.3998C17.5742 9.68314 17.4826 9.91647 17.2992 10.0998L12.6992 14.6998C12.5992 14.7998 12.4909 14.8708 12.3742 14.9128C12.2576 14.9541 12.1326 14.9748 11.9992 14.9748C11.8659 14.9748 11.7409 14.9541 11.6242 14.9128C11.5076 14.8708 11.3992 14.7998 11.2992 14.6998L6.69922 10.0998C6.51589 9.91647 6.42422 9.68313 6.42422 9.3998C6.42422 9.11647 6.51589 8.88314 6.69922 8.6998Z" fill="black"/>
+                        </svg>
+                    </div>
+                    <div class="content mulish-500">
+                      <ul>
+                        <li><a href="gcc.html">Global Coordinating Committee </a></li>
+                        <li><a href="gs.html">Global Secretariat</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsable-item">
+                    <div class="collapsible">
+                      <div class="country-name-flag-container">
+                        <h4 class="mulish-700">Our Regions</h4>
+                      </div>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.69922 8.6998C6.88255 8.51647 7.11588 8.4248 7.39922 8.4248C7.68255 8.4248 7.91589 8.51647 8.09922 8.6998L11.9992 12.5998L15.8992 8.6998C16.0826 8.51647 16.3159 8.4248 16.5992 8.4248C16.8826 8.4248 17.1159 8.51647 17.2992 8.6998C17.4826 8.88314 17.5742 9.11647 17.5742 9.3998C17.5742 9.68314 17.4826 9.91647 17.2992 10.0998L12.6992 14.6998C12.5992 14.7998 12.4909 14.8708 12.3742 14.9128C12.2576 14.9541 12.1326 14.9748 11.9992 14.9748C11.8659 14.9748 11.7409 14.9541 11.6242 14.9128C11.5076 14.8708 11.3992 14.7998 11.2992 14.6998L6.69922 10.0998C6.51589 9.91647 6.42422 9.68313 6.42422 9.3998C6.42422 9.11647 6.51589 8.88314 6.69922 8.6998Z" fill="black"/>
+                        </svg>
+                    </div>
+                    <div class="content mulish-500">
+                      <ul>
+                        <li><a href="africa-article.html">Latin America and the Caribbean </a></li>
+                        <li><a href="africa-article.html">Africa</a></li>
+                        <li><a href="africa-article.html">Asia and the Pacific</a></li>
+                        <li><a href="africa-article.html">North America and Europe</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="./regional.html">DCJ members?</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Climate talk links -->
+          <div class="collapsable-item">
+            <div class="collapsible">
+              <div class="country-name-flag-container">
+                <h4 class="mulish-700">Climate Talks</h4>
+              </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.69922 8.6998C6.88255 8.51647 7.11588 8.4248 7.39922 8.4248C7.68255 8.4248 7.91589 8.51647 8.09922 8.6998L11.9992 12.5998L15.8992 8.6998C16.0826 8.51647 16.3159 8.4248 16.5992 8.4248C16.8826 8.4248 17.1159 8.51647 17.2992 8.6998C17.4826 8.88314 17.5742 9.11647 17.5742 9.3998C17.5742 9.68314 17.4826 9.91647 17.2992 10.0998L12.6992 14.6998C12.5992 14.7998 12.4909 14.8708 12.3742 14.9128C12.2576 14.9541 12.1326 14.9748 11.9992 14.9748C11.8659 14.9748 11.7409 14.9541 11.6242 14.9128C11.5076 14.8708 11.3992 14.7998 11.2992 14.6998L6.69922 10.0998C6.51589 9.91647 6.42422 9.68313 6.42422 9.3998C6.42422 9.11647 6.51589 8.88314 6.69922 8.6998Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="content mulish-500">
+              <ul>
+                <li><a href="sb.html">SB</a></li>
+                <li><a href="cop.html">COP</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Climate Campaigns -->
+          <div class="collapsable-item">
+            <div class="collapsible">
+              <div class="country-name-flag-container">
+                <h4 class="mulish-700">Climate Campaigns</h4>
+              </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.69922 8.6998C6.88255 8.51647 7.11588 8.4248 7.39922 8.4248C7.68255 8.4248 7.91589 8.51647 8.09922 8.6998L11.9992 12.5998L15.8992 8.6998C16.0826 8.51647 16.3159 8.4248 16.5992 8.4248C16.8826 8.4248 17.1159 8.51647 17.2992 8.6998C17.4826 8.88314 17.5742 9.11647 17.5742 9.3998C17.5742 9.68314 17.4826 9.91647 17.2992 10.0998L12.6992 14.6998C12.5992 14.7998 12.4909 14.8708 12.3742 14.9128C12.2576 14.9541 12.1326 14.9748 11.9992 14.9748C11.8659 14.9748 11.7409 14.9541 11.6242 14.9128C11.5076 14.8708 11.3992 14.7998 11.2992 14.6998L6.69922 10.0998C6.51589 9.91647 6.42422 9.68313 6.42422 9.3998C6.42422 9.11647 6.51589 8.88314 6.69922 8.6998Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="content mulish-500">
+              <ul>
+                <li><a href="climate-campaigns.html">Global Fight on Fossil Fuel Phase Out</a></li>
+                <li><a href="climate-campaigns.html">Global Campaign on Climate Finance</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Working Groups -->
+          <div class="collapsable-item">
+            <div class="collapsible">
+              <div class="country-name-flag-container">
+                <h4 class="mulish-700">Working Groups</h4>
+              </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.69922 8.6998C6.88255 8.51647 7.11588 8.4248 7.39922 8.4248C7.68255 8.4248 7.91589 8.51647 8.09922 8.6998L11.9992 12.5998L15.8992 8.6998C16.0826 8.51647 16.3159 8.4248 16.5992 8.4248C16.8826 8.4248 17.1159 8.51647 17.2992 8.6998C17.4826 8.88314 17.5742 9.11647 17.5742 9.3998C17.5742 9.68314 17.4826 9.91647 17.2992 10.0998L12.6992 14.6998C12.5992 14.7998 12.4909 14.8708 12.3742 14.9128C12.2576 14.9541 12.1326 14.9748 11.9992 14.9748C11.8659 14.9748 11.7409 14.9541 11.6242 14.9128C11.5076 14.8708 11.3992 14.7998 11.2992 14.6998L6.69922 10.0998C6.51589 9.91647 6.42422 9.68313 6.42422 9.3998C6.42422 9.11647 6.51589 8.88314 6.69922 8.6998Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="content mulish-500">
+              <ul>
+                <li><a href="working-groups.html">Climate Finance Working Group</a></li>
+                <li><a href="working-groups.html">False Solution / Real Solution Working Group</a></li>
+                <li><a href="working-groups.html">Just Transition Working Group</a></li>
+                <li><a href="working-groups.html">Food and Agriculture Coordinating Group</a></li>
+                <li><a href="working-groups.html">Climate and Militarism Coordinating Group</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Resources -->
+          <div class="collapsable-item">
+            <div class="collapsible">
+              <div class="country-name-flag-container">
+                <h4 class="mulish-700">Resources</h4>
+              </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.69922 8.6998C6.88255 8.51647 7.11588 8.4248 7.39922 8.4248C7.68255 8.4248 7.91589 8.51647 8.09922 8.6998L11.9992 12.5998L15.8992 8.6998C16.0826 8.51647 16.3159 8.4248 16.5992 8.4248C16.8826 8.4248 17.1159 8.51647 17.2992 8.6998C17.4826 8.88314 17.5742 9.11647 17.5742 9.3998C17.5742 9.68314 17.4826 9.91647 17.2992 10.0998L12.6992 14.6998C12.5992 14.7998 12.4909 14.8708 12.3742 14.9128C12.2576 14.9541 12.1326 14.9748 11.9992 14.9748C11.8659 14.9748 11.7409 14.9541 11.6242 14.9128C11.5076 14.8708 11.3992 14.7998 11.2992 14.6998L6.69922 10.0998C6.51589 9.91647 6.42422 9.68313 6.42422 9.3998C6.42422 9.11647 6.51589 8.88314 6.69922 8.6998Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="content mulish-500">
+              <ul>
+                <li><a href="videos.html">All Publications</a></li>
+                <li><a href="videos.html">Podcast</a></li>
+                <li><a href="videos.html">Briefer</a></li>
+                <li><a href="videos.html">Reports</a></li>
+                <li><a href="videos.html">Article</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Media -->
+          <div class="collapsable-item">
+            <div class="collapsible">
+              <div class="country-name-flag-container">
+                <h4 class="mulish-700">Media</h4>
+              </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.69922 8.6998C6.88255 8.51647 7.11588 8.4248 7.39922 8.4248C7.68255 8.4248 7.91589 8.51647 8.09922 8.6998L11.9992 12.5998L15.8992 8.6998C16.0826 8.51647 16.3159 8.4248 16.5992 8.4248C16.8826 8.4248 17.1159 8.51647 17.2992 8.6998C17.4826 8.88314 17.5742 9.11647 17.5742 9.3998C17.5742 9.68314 17.4826 9.91647 17.2992 10.0998L12.6992 14.6998C12.5992 14.7998 12.4909 14.8708 12.3742 14.9128C12.2576 14.9541 12.1326 14.9748 11.9992 14.9748C11.8659 14.9748 11.7409 14.9541 11.6242 14.9128C11.5076 14.8708 11.3992 14.7998 11.2992 14.6998L6.69922 10.0998C6.51589 9.91647 6.42422 9.68313 6.42422 9.3998C6.42422 9.11647 6.51589 8.88314 6.69922 8.6998Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="content mulish-500">
+              <ul>
+                <li><a href="videos.html">Press Release</a></li>
+                <li><a href="videos.html">Statements</a></li>
+                <li><a href="videos.html">Letters</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="videos.html">Podcasts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+  </nav>
 
 
     <div class="about-section">
-        <div class="images">
-            <img src="./Assets/Images/COPimg1.png" alt="Image 1" class="cop-img1">
-            <div class="image-row2">
-                <img src="./Assets/Images/COPimg2.png" alt="Image 2" style="flex: 1;">
-                <img src="./Assets/Images/COPimg3.png" alt="Image 3" style="flex: 1;">
+      <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Assets/Images/COPimg1.png" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/Images/COPimg2.png" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/Images/COPimg3.png" alt="Image 3">
             </div>
         </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
         <div class="content">
             <h1 class="brawler-700">About Us</h1>
             <p class="mulish-500">Global Campaign to Demand Climate Justice (DCJ) is a network of over 200 climate and human rights organizations working at international, regional and local level on issues of climate justice and just transition. <br><br>DCJ formed in 2012 in Bangkok with the intention of being a campaign vehicle. It focused on bringing on groups and organizations together rather than unaffiliated individuals. It launched with 200 groups agreeing to a common platform. <br><br>Since then, DCJ has ben campaigning on energy transformation (through the Reclaim Power mobilizations) and food, land, and water, as well as establishing itself as the convener of climate justice groups in the United Nations Framework Convention on Climate Change, where DCJ makes up one half of the Environmental NGO Constituency alongside Climate Action Network.</p>
@@ -290,5 +462,6 @@
         </div>
     </footer>
     
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -91,7 +94,6 @@ h1, h2, h3, h4, h5, h6, p{
     cursor: pointer;
     max-width: fit-content;
     text-decoration: none;
-    
 }
 .primary-btn{
     background-color: #000;
@@ -142,6 +144,9 @@ header{
 .logo-img{
     width: 75px;
     height: 75px;
+}
+.desktop-memu{
+    display: block;
 }
 nav{
     display: flex;
@@ -197,6 +202,108 @@ nav .main-menu{
     left: 100%;
 }
 
+@media (max-width: 1024px) {
+    nav .main-menu{
+        gap: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .desktop-memu{
+        display: none;
+    }
+}
+
+/* Mobile menu */
+
+.mobile-menu{
+    display: none;
+}
+
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.menu a, .menu h4 {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #f1f1f1;
+}
+
+.menu .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+}
+
+.open-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    z-index: 999;
+    position: relative;
+    margin-right: 2rem;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 500;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: none;
+}
+
+.mobile-menu .country-collapsable-container{
+    padding: 4rem;
+}
+.mobile-menu .collapsible{
+    border: none;
+    border-bottom: 1px solid black;
+}
+.mobile-menu .country-collapsable-container .content{
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.mobile-menu .country-collapsable-container ul{
+    list-style-type: none;
+}
+
+
+@media (max-width: 768px) {
+    .mobile-menu{
+        display: block;
+    }
+    .open-btn{
+        display: block;
+    }
+}
 
 /* 3. Banner */
 
@@ -238,6 +345,36 @@ nav .main-menu{
     object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+    .banner-buttons{
+        padding-left: 8rem;
+    }
+    .banner-text h1, .banner-text p{
+        padding-left: 8rem;
+    }
+}
+@media (max-width: 768px) {
+    .banner{
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+    .banner-text h1, .banner-text p{
+        text-align: center;
+        padding: 0rem 3rem;
+    }
+    .banner-buttons{
+        padding: 0rem 3rem;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+
+    }
+    .banner-buttons .button{
+        width: 100%;
+        max-width: none;
+        text-align: center;
+    }
+}
 
 
 /* 4. COP 28 Section */
@@ -252,6 +389,11 @@ nav .main-menu{
 /* .cop-section .images, .cop-section .content{
     flex: 1;
 } */
+.cop-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .cop-img1{
     width: 100%;
     height: 100%;
@@ -262,6 +404,15 @@ nav .main-menu{
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
+.cop-image1-container{
+    width: 600px;
+    border: 1px solid black;
+}
+.cop-image2-container, .cop-image3-container{
+    width: 288px;
+    border: 1px solid black;
+}
+
 
 .cop-section .content h1, .cop-section .content p, .cop-section .content ul{
     max-width: 38rem;
@@ -276,6 +427,22 @@ nav .main-menu{
     margin-bottom: 1rem;
 }
 
+@media (max-width: 1280px) {
+    .cop-section{
+        flex-direction: column;
+    }
+}
+@media (max-width: 425px) {
+    .cop-section{
+        margin: 5rem 1.5rem;
+    }
+    .cop-image1-container{
+        width: 400px;
+    }
+    .cop-image2-container, .cop-image3-container{
+        width: 188px;
+    }
+}
 
 /* 5. Latest News */
 
@@ -320,8 +487,33 @@ nav .main-menu{
 .card h3 {
     font-size: 1rem;
     margin: 0rem 1rem 2.5rem 1rem;
+    cursor: pointer;
+}
+.card h3:hover{
+    text-decoration: underline
 }
 
+@media (max-width: 1024px) {
+    .news-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .latest-news{
+        padding: 0rem 5rem;
+    }
+}
+@media (max-width: 425px) {
+    .latest-news{
+        padding: 0rem 1.5rem;
+    }
+    .latest-news h2{
+        font-size: 2rem;
+    }
+    .news-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 /* 6. Video Section */
 
@@ -341,11 +533,30 @@ nav .main-menu{
 .video{
     margin-bottom: 3rem;
 }
-.video-subtext{
-    margin-bottom: 3rem;
-    font-size: 2rem;
+.homepage-video{
+    width: 960px;
+    height: 540px;
 }
-
+@media (max-width: 1024px) {
+    .homepage-video{
+        width: 600px;
+        height: 400px;
+    }
+}
+@media (max-width: 768px) {
+    .video-title{
+        font-size: 1.5rem;
+    }
+    .homepage-video{
+        width: 600px;
+        height: 400px;
+    }
+}
+@media (max-width: 425px) {
+    .homepage-video{
+        width: 400px;
+    }
+}
 
 /* 7. Podcast */
 
@@ -371,6 +582,11 @@ nav .main-menu{
     border: 1px solid #ff4500;
     background: none;
     cursor: pointer;
+    display: block;
+}
+.view-more:hover{
+    background: #EB6928;
+    color: white;
 }
 
 .podcast-cards, .member-cards {
@@ -430,12 +646,49 @@ nav .main-menu{
     font-size: 0.875rem;
 }
 
+.view-more-mobile{
+    display: none;
+    width: 100%;
+    
+}
+@media (max-width: 768px) {
+    .view-more{
+        display: none;
+    }
+    .view-more-mobile{
+        display: block;
+    }
+    .latest-podcasts, .dcj-members{
+        padding: 0rem 3rem;
+    }
+    .header h2{
+        font-size: 2rem;
+    }
+    .latest-podcasts .content{
+        padding: 1rem 0rem;
+    }
+    .latest-podcasts .icon{
+        padding: 5rem 3rem;
+    }
+}
+@media (max-width: 425px) {
+    .latest-podcasts, .dcj-members{
+        padding: 0rem 1.5rem;
+    }
+    .latest-podcasts .content h3{
+        font-size: 1rem;
+    } 
+    .icon{
+        margin-right: .5rem;
+    }
+}
+
 
 /* 8. Working Group */
 
 .working-group {
     padding: 0 11.125rem;
-    margin-bottom: 16rem;
+    margin-bottom: 7rem;
 
 }
 
@@ -476,6 +729,8 @@ nav .main-menu{
     font-size: 0.875rem;
     text-align: center;
     margin-bottom: .75rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 
 
@@ -522,6 +777,28 @@ nav .main-menu{
     fill: #EB6928;
 }
 
+@media (max-width: 768px) {
+    .member-card .icon{
+        padding: 6rem 4rem;
+    }
+}
+@media (max-width: 425px) {
+    .member-card .icon{
+        padding: 10rem 3rem;
+    }
+    .member-card .icon img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .member-card h3{
+        font-size: 1.125rem;
+    }
+    .member-card .member-content{
+        font-size: 1rem;
+        margin-right: .5rem;
+    }
+}
+
 
 
 /* 9. Campaign Section */
@@ -554,7 +831,20 @@ nav .main-menu{
     color: #fff;
 }
 
+@media (max-width: 1024px) {
+    .campaign-section{
+        flex-direction: column;
+    }
+}
+@media (max-width: 425px) {
+    .campaign-section{
+        padding: 6rem 1.5rem;
+    }
+    .campaign-section img{
+        width: 400px;
+    }
 
+}
 
 /* 10 Bottom banner */
 
@@ -622,15 +912,65 @@ nav .main-menu{
     gap: 2rem;
 }
 
+@media (max-width: 1024px) {
+    .bottom-banner-2 h1{
+        font-size: 3rem;
+    }
+    .bottom-banner-right{
+        padding-left: 3rem;
+    }
+}
+@media (max-width: 768px) {
+    .bottom-banner{
+        flex-direction: column-reverse;
+    }
+    .bottom-banner h1, .bottom-banner p, .bottom-banner .banner-buttons{
+        padding-left: 3rem;
+    }
+    .bottom-banner-text{
+        padding-left: 3rem;
+    }
+    .bottom-banner-2 p{
+        width: 16.25rem;
+    }
+}
+@media (max-width: 425px) {
+    .bottom-banner{
+        gap: 4rem;
+    }
+    .bottom-banner h1{
+        font-size: 3rem;
+    }
+    .bottom-banner-text{
+        padding: 3rem 1.5rem;
+    }
+    .bottom-banner-2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-banner-2 h1{
+        text-align: center;
+    }
+    .bottom-banner-right{
+        padding: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-banner-right p{
+        text-align: center;
+    }
+}
 
 /* 11. Footer */
 
 footer{
     border-top: 1px solid black;
-    
     margin-bottom: 5rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
     padding: 6rem 7rem 0rem 7rem;
 }
 footer  img{
@@ -656,7 +996,25 @@ footer input{
 }
 
 
+@media (max-width: 1280px) {
+    footer .subscribe{
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    footer{
+        justify-content: normal;
+    }
+    .footer-logo-container{
+        width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    footer{
 
+    padding: 3rem 1.5rem;
+    }
+}
 
 /* About Page */
 
@@ -683,7 +1041,81 @@ footer input{
     margin-bottom: 3rem;
 }
 
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 1280px) {
+    .about-section{
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .about-section{
+        margin: 7rem 3.5rem;
+    }
+    .about-section .content h1{
+        font-size: 1.5rem;
+    }
+    .about-section .content p{
+        font-size: 1rem;
+    }
+    
+}
+@media (max-width: 425px) {
+    .about-section{
+        margin: 2rem 1.5rem;
+    }
+    .carousel{
+        width: 100%;
+    }
+    
+}
 
 
 /* GCC */
@@ -734,6 +1166,7 @@ footer input{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    min-height: 70vh;
 }
 
 .ir-nr-btn-container{
@@ -770,7 +1203,7 @@ footer input{
     border: 1px solid;
 }
 .region-list-container li{
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 .region-list-container a{
@@ -802,6 +1235,8 @@ footer input{
     border: 1px solid;
     text-decoration: none;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 .regional-card img{
     width: 100%;
@@ -818,6 +1253,9 @@ footer input{
     padding: 1.25rem 2.5rem;
     background-color: #000;
     color: #fff;
+}
+.regional-card:hover > h3{
+    background-color: #EB6928;
 }
 .region-active a{
     color: white;
@@ -986,7 +1424,7 @@ footer input{
 
 .single-post{
     display: flex;
-    padding: 7rem 10rem;
+    padding: 7rem 20rem;
 }
 
 .toc{
@@ -994,6 +1432,7 @@ footer input{
     padding-top: 1.5rem;
 }
 .post-body{
+
     flex: 2;
 }
 .toc-title{
@@ -1130,7 +1569,6 @@ footer input{
 .our-platform-sec-3{
     background-color: #421F48;
     padding: 7rem 6.5rem;
-    margin-bottom: 3rem;
 }
 .our-platform-sec-3 h3, .our-platform-sec-3 p{
     text-align: center;
@@ -1155,8 +1593,131 @@ footer input{
     padding: 2rem;
 }
 
+.op-sec4{
+    padding: 7rem 6.5rem;
+}
+.op-sec4-row{
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.op-sec4-content{
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid black;
+}
+.op-sec4-content h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}.op-sec4-content p{
+    font-size: 1.125rem;
+}
+.op-sec4-img-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.op-sec4-img{
+    max-width: 540px;
+    min-width: 500px;
+    height: 100%;
+    object-fit: cover;
+}
+.op-sec4-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.op-sec5-title{
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+.op-sec5-accordian{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.poppins{
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.op-sec5-accordian-title{
+    font-size: 1.25rem;
+}
+
+
+@media (max-width: 1024px) {
+    .our-platform-sec-2{
+        flex-direction: column;
+    }
+    .op-sec4-img-flex{
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .our-platform-sec-2 .sec-2-row1 h3, .our-platform-sec-3 h3, .op-sec5-title{
+        font-size: 2rem;
+    }
+    .our-platform-sec-3, .op-sec4, .country-collapsable-container{
+        padding: 6rem 3rem;
+    }
+    .op-sec4-content h3{
+        font-size: 1.5rem;
+    }
+    .op-sec4-content p{
+        font-size: 1rem;
+    }
+    .op-sec5-accordian-title{
+        font-size: 1.025rem;
+    }
+    .poppins{
+        font-size: 1.5rem;
+    }
+    .country-collapsable-container li{
+        font-size: 0.875rem;
+    }
+}
+@media (max-width: 425px) {
+    .our-platform-sec-2,  .country-collapsable-container, .op-sec4, .our-platform-sec-3{
+        padding: 3rem 1.5rem;
+    }
+    .op-sec5-title{
+        font-size: 1.5rem;
+    }
+    .sec-3-flex-wrapper, .op-sec4-row{
+        flex-direction: column;
+    }
+    .op-sec4-img{
+        min-width: 262px;
+    }
+    .country-collapsable-container .content{
+        padding-left: 2rem;
+    }
+}
+
+
+
 /* climate-campaign */
 
 .climate-campaign .banner-text h1{
     font-size: 3.125rem;
+}
+
+/* Afric Article */
+
+.africa-article .banner-text h1{
+    font-size: 4rem;
+}
+
+.climate-campaigns .banner-text h1{
+    font-size: 4rem;
+}
+
+.filter-dropdown{
+    display: flex;
+    gap: 1rem;
 }
