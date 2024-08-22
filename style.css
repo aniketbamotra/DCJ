@@ -304,6 +304,11 @@ nav .main-menu{
         display: block;
     }
 }
+@media (max-width: 425px) {
+    .mobile-menu .country-collapsable-container{
+        padding: 3rem 2rem;
+    }
+}
 
 /* 3. Banner */
 
@@ -1145,6 +1150,59 @@ footer input{
 }
 .gcc .banner-image, .ir .banner-image{
     max-width: 50vw;
+}
+
+@media (max-width: 1280px) {
+    .gcc .banner-image, .ir .banner-image{
+        height: 80vh;
+    }
+}
+@media (max-width: 1024px) {
+    .gcc .working-group{
+        margin: 3rem 1rem;
+    }
+    .working-group{
+        padding: 0rem 3rem;
+    }
+    .working-group h2{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .gcc .banner-image, .ir .banner-image{
+        max-width: 100vw;
+    }
+    .gcc .banner .banner-text, .ir .banner .banner-text{
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+    .gcc .working-group{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .working-group{
+        padding: 0rem 1.5rem;
+    }
+    .cards{
+        gap: 1rem;
+    }
+}
+@media (max-width: 425px) {
+    .gcc .banner, .ir .banner{
+        gap: 2rem;
+    }
+    .gcc .banner .banner-text, .ir .banner .banner-text{
+        padding-left: 2rem;
+    }
+    .gcc .banner-text h1, .ir .banner-text h1{
+        font-size: 2rem;
+    }
+    .gcc .banner-text p, .ir .banner-text p{
+        font-size: 1rem;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
 }
 
 
