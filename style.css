@@ -1558,7 +1558,7 @@ footer input{
 /* Single post page */
 
 .single-post{
-    display: flex;
+    /* display: flex; */
     padding: 7rem 20rem;
 }
 
@@ -1672,6 +1672,46 @@ footer input{
     font-weight: normal;
     font-style: italic;
     size: .875rem;
+}
+.latest-podcasts .news-cards{
+    grid-template-columns: repeat(2, 1fr);
+}
+.latest-podcasts .news-cards img{
+    width: 100%;
+}
+
+@media (max-width: 1280px) {
+    .single-post{
+        padding: 7rem 15rem;
+    }
+}
+@media (max-width: 1024px) {
+    .single-post{
+        padding: 7rem 10rem;
+    }
+}
+@media (max-width: 768px) {
+    .single-post{
+        padding: 5rem;
+    }
+}
+@media (max-width: 425px) {
+    .single-post{
+        padding: 3rem;
+    }
+    .post-body .title{
+        font-size: 2rem;
+    }
+    .post-body .author-date{
+        font-size: 1.125rem;
+    }
+    .post-body p{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .latest-podcasts .news-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
@@ -1841,6 +1881,14 @@ footer input{
 .climate-campaign .banner-text h1{
     font-size: 3.125rem;
 }
+@media (max-width: 425px) {
+    .climate-campaign .banner-text h1{
+        font-size: 2rem;
+    }
+    .climate-campaign .banner-text p{
+        font-size: 1rem;
+    }
+}
 
 /* Afric Article */
 
@@ -1863,5 +1911,8 @@ footer input{
     }
     .africa-article .banner-text p{
         font-size: 1rem;
+    }
+    .climate-campaigns .banner-text h1{
+        padding: 0rem 1rem;
     }
 }
