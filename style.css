@@ -1408,7 +1408,7 @@ footer input{
 /* resource grid */
 
 .resource-grid{
-    padding: 7rem 10rem;
+    padding: 7rem 8rem;
     width: 100%;
 }
 
@@ -1443,11 +1443,13 @@ footer input{
     justify-content: center;
     align-items: stretch;
     border: 1px solid black;
+    width: 36rem;
 }
 .search input{
-    min-width: 35rem;
+    width: 100%;
     padding: 1rem;
     font-size: 1.125rem;
+    border: none;
 }
 .search .button{
     padding: 1rem 2.5rem;
@@ -1462,7 +1464,7 @@ footer input{
 }
 
 .applied-filter{
-    display: flex;
+    display: none;
     align-items: center;
     gap: .75rem;
     font-size: 1.25rem;
@@ -1507,6 +1509,51 @@ footer input{
     margin-top: 5rem;
 }
 
+@media (max-width: 1280px){
+    .resource-grid{
+        padding: 5rem 4rem;
+    }
+    
+}
+@media (max-width: 1024px) {
+    .resource-grid ul{
+        gap: 1.5rem;
+    }
+    .resource-grid li{
+        font-size: 1.125rem;
+    }
+    .search input, .search .button, .search-filter-container select{
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+    .search-filter-container select{
+        min-width: 8rem;
+
+    }
+}
+@media (max-width: 768px){
+    .resource-grid{
+        padding: 3rem 2rem;
+    }
+    .sb .banner-text h1{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    .search-filter-container{
+        flex-direction: column;
+        align-items: start;
+    }
+    .search{
+        width: 100%;
+    }
+    .resource-grid ul{
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+    }
+    .resource-grid li{
+        min-width: fit-content;
+    }
+}
 
 /* Single post page */
 
